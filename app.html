@@ -195,7 +195,7 @@
                     myClient = await resClient.json();
                     
                     // ПРОВЕРКА: Если клиент зашел в ЧУЖОЙ бот — не показываем ничего
-                    if (!myClient || myClient.client_id !== 'tilda') {
+                    if (!myClient || myClient.client_id !== BOT_CLIENT_ID) {
                         myLeads = [];
                         document.getElementById('acc-plan-name').innerText = 'Гость';
                         document.getElementById('acc-status').innerText = 'Нет доступа';
